@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PARTIDO JUGADO</title>
+    <link rel="stylesheet" href="css/estilos.min.css">
+
+    <!-- ESTO ES SOLO PARA ESTILOS ESPECÍFICOS EN ESTE DOCUMENTO. IGNORENLO. -->
+    <style>
+        .contenedor {
+            margin-top: -1rem;
+            height: 100vh;
+            display: grid; 
+            justify-content: space-evenly;
+            align-content: space-evenly;
+            grid-template-columns: repeat(2, 336px);
+        }
+
+        .cards-menu {
+            padding: 1rem;
+            width: 90vw;
+            margin: 0 auto;
+            display: grid;
+            grid-auto-flow: column;
+            grid-column-gap: 2rem;
+            justify-content: center;
+        }
+
+        .cards-menu a {
+            display: block;
+            color: #fff;
+            padding: 1rem 2rem;
+            background: rgb(83, 108, 160);
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all .4s;
+        }
+
+        .cards-menu a:hover {
+            opacity: .5;
+        }
+
+        .cards-menu a.active {
+            opacity: .5;
+            cursor: default;
+        }
+        
+        a.cards {
+            background: rgb(12, 94, 12);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="cards-menu">
+        <a href="1-carta-por-defecto.html">DEFAULT CARD</a>
+        <a href="2-por-jugar.html">POR JUGAR</a>
+        <a href="3-en-vivo.html">EN VIVO</a>
+        <a class="active" href="#">FINALIZADO</a>
+        <a href="5-definicion-por-penalties.html">PENALTIES</a>
+        <a class="cards" href="../Grand Final Cards/grand-final-carta-por-defecto.html">FINAL CARDS</a>
+    </nav>
+
+    <div class="contenedor">
+
+        <!-- LAS ESTRUCTURAS SON SIMILARES, SOLO SE LE AÑADE LAS CLASES "xbox" o "ps4" DEPENDIENDO DE LA CONSOLA. -->
+
+
+
+        <!-- XBOX ONE GANADOR Y PERDEDOR -->
+
+        <div class="border-card xbox">
+            <div class="card">
+                <div class="players-thumbnails-score">
+                    <div class="player player1">
+                        <div class="thumbnail-logo">
+                            <div class="thumbnail">
+                                <img src="img/players/thumbnail.jpg" alt="">
+                            </div>
+
+                            <div class="logo">
+                                <img src="img/teams/escudo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scores">
+                        <div class="NimbusSanCon-Bol score score-player1 win"> <!-- Añadir clase "win" para cambiar el color de fondo del score del player ganador -->
+                            <p>4</p>
+                        </div>
+                        <div class="NimbusSanCon-Bol score score-player2 lose"> <!-- Añadir clase "lose" para cambiar el color de letra del score del player perdedor -->
+                            <p>2</p>
+                        </div>
+                    </div>
+
+                    <div class="player player2 lose"> <!-- Añadir clase "lose" para la opacidad de la foto y equipo del perdedor -->
+                        <div class="thumbnail-logo">
+                            <div class="logo">
+                                <img src="img/teams/escudo.png" alt="">
+                            </div>
+
+                            <div class="thumbnail">
+                                <img src="img/players/thumbnail.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="players-info-games">
+
+                    <div class="player player1">
+                        <div class="nation-nick">
+                            <div class="nation">
+                                <img src="img/nations/bandera.png" alt="">
+                            </div>
+
+                            <div class="nick">
+                                <p class="nickname NimbusSanCon-Bol">GeraldoG09</p>
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            TKO PF
+                        </div>
+                    </div>
+
+                    <div class="games">
+
+                        <div class="game1">
+                            <span class="NimbusSanCon-Bol player1-final-score-g1">4</span>
+
+                            <span class="line">G1</span>
+
+                            <span class="NimbusSanCon-Bol player2-final-score-g1">2</span>
+                        </div>
+
+                        <div class="game2">
+                            <span class="NimbusSanCon-Bol player1-final-score-g2">—</span>
+
+                            <span class="line">G2</span>
+
+                            <span class="NimbusSanCon-Bol player2-final-score-g2">—</span>
+                        </div>
+
+                    </div>
+
+                    <div class="player player2 lose"> <!-- Añadir clase "lose" para la opacidad del nickname, team name y país del perdedor -->
+                        <div class="nation-nick">
+
+                            <div class="nick">
+                                <p class="nickname NimbusSanCon-Bol">GeraldoG09</p>
+                            </div>
+
+                            <div class="nation">
+                                <img src="img/nations/bandera.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="team">
+                            TKO PF
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- XBOX ONE EMPATE -->
+
+        <div class="border-card xbox">
+            <div class="card">
+                <div class="players-thumbnails-score">
+                    <div class="player player1">
+                        <div class="thumbnail-logo">
+                            <div class="thumbnail">
+                                <img src="img/players/thumbnail.jpg" alt="">
+                            </div>
+
+                            <div class="logo">
+                                <img src="img/teams/escudo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scores">
+                        <div class="NimbusSanCon-Bol score score-player1 draw"> <!-- Añadir clase "draw" en el score del player -->
+                            <p>2</p>
+                            <p class="draw"></p> <!-- Añadir etiqueta <p> con la clase "draw" -->
+                        </div>
+                        <div class="NimbusSanCon-Bol score score-player2 draw"> <!-- Añadir clase "draw" en el score del player -->
+                            <p>2</p>
+                            <p class="draw"></p> <!-- Añadir etiqueta <p> con la clase "draw" -->
+                        </div>
+                    </div>
+
+                    <div class="player player2">
+                        <div class="thumbnail-logo">
+                            <div class="logo">
+                                <img src="img/teams/escudo.png" alt="">
+                            </div>
+
+                            <div class="thumbnail">
+                                <img src="img/players/thumbnail.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="players-info-games">
+
+                    <div class="player player1">
+                        <div class="nation-nick">
+                            <div class="nation">
+                                <img src="img/nations/bandera.png" alt="">
+                            </div>
+
+                            <div class="nick">
+                                <p class="nickname NimbusSanCon-Bol">GeraldoG09</p>
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            TKO PF
+                        </div>
+                    </div>
+
+                    <div class="games">
+
+                        <div class="game1">
+                            <span class="NimbusSanCon-Bol player1-final-score-g1">—</span>
+
+                            <span class="line">G1</span>
+
+                            <span class="NimbusSanCon-Bol player2-final-score-g1">—</span>
+                        </div>
+
+                        <div class="game2">
+                            <span class="NimbusSanCon-Bol player1-final-score-g2">—</span>
+
+                            <span class="line">G2</span>
+
+                            <span class="NimbusSanCon-Bol player2-final-score-g2">—</span>
+                        </div>
+
+                    </div>
+
+                    <div class="player player2">
+                        <div class="nation-nick">
+
+                            <div class="nick">
+                                <p class="nickname NimbusSanCon-Bol">GeraldoG09</p>
+                            </div>
+
+                            <div class="nation">
+                                <img src="img/nations/bandera.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="team">
+                            TKO PF
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+        <!-- PLAYSTATION 4 GANADOR Y PERDEDOR -->
+
+        <div class="border-card ps4">
+            <div class="card">
+                <div class="players-thumbnails-score">
+                    <div class="player player1">
+                        <div class="thumbnail-logo">
+                            <div class="thumbnail">
+                                <img src="img/players/thumbnail.jpg" alt="">
+                            </div>
+
+                            <div class="logo">
+                                <img src="img/teams/escudo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scores">
+                        <div class="NimbusSanCon-Bol score score-player1 win"> <!-- Añadir clase "win" para cambiar el color de fondo del score del player ganador -->
+                            <p>4</p>
+                        </div>
+                        <div class="NimbusSanCon-Bol score score-player2 lose"> <!-- Añadir clase "lose" para cambiar el color de letra del score del player perdedor -->
+                            <p>2</p>
+                        </div>
+                    </div>
+
+                    <div class="player player2 lose"> <!-- Añadir clase "lose" para la opacidad de la foto y equipo del perdedor -->
+                        <div class="thumbnail-logo">
+                            <div class="logo">
+                                <img src="img/teams/escudo.png" alt="">
+                            </div>
+
+                            <div class="thumbnail">
+                                <img src="img/players/thumbnail.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="players-info-games">
+
+                    <div class="player player1">
+                        <div class="nation-nick">
+                            <div class="nation">
+                                <img src="img/nations/bandera.png" alt="">
+                            </div>
+
+                            <div class="nick">
+                                <p class="nickname NimbusSanCon-Bol">GeraldoG09</p>
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            TKO PF
+                        </div>
+                    </div>
+
+                    <div class="games">
+
+                        <div class="game1">
+                            <span class="NimbusSanCon-Bol player1-final-score-g1">4</span>
+
+                            <span class="line">G1</span>
+
+                            <span class="NimbusSanCon-Bol player2-final-score-g1">2</span>
+                        </div>
+
+                        <div class="game2">
+                            <span class="NimbusSanCon-Bol player1-final-score-g2">—</span>
+
+                            <span class="line">G2</span>
+
+                            <span class="NimbusSanCon-Bol player2-final-score-g2">—</span>
+                        </div>
+
+                    </div>
+
+                    <div class="player player2 lose"> <!-- Añadir clase "lose" para la opacidad del nickname, team name y país del perdedor -->
+                        <div class="nation-nick">
+
+                            <div class="nick">
+                                <p class="nickname NimbusSanCon-Bol">GeraldoG09</p>
+                            </div>
+
+                            <div class="nation">
+                                <img src="img/nations/bandera.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="team">
+                            TKO PF
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- PLAYSTATION 4 EMPATE -->
+
+        <div class="border-card ps4">
+            <div class="card">
+                <div class="players-thumbnails-score">
+                    <div class="player player1">
+                        <div class="thumbnail-logo">
+                            <div class="thumbnail">
+                                <img src="img/players/thumbnail.jpg" alt="">
+                            </div>
+
+                            <div class="logo">
+                                <img src="img/teams/escudo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scores">
+                        <div class="NimbusSanCon-Bol score score-player1 draw"> <!-- Añadir clase "draw" en el score del player -->
+                            <p>2</p>
+                            <p class="draw"></p> <!-- Añadir etiqueta <p> con la clase "draw" -->
+                        </div>
+                        <div class="NimbusSanCon-Bol score score-player2 draw"> <!-- Añadir clase "draw" en el score del player -->
+                            <p>2</p>
+                            <p class="draw"></p> <!-- Añadir etiqueta <p> con la clase "draw" -->
+                        </div>
+                    </div>
+
+                    <div class="player player2">
+                        <div class="thumbnail-logo">
+                            <div class="logo">
+                                <img src="img/teams/escudo.png" alt="">
+                            </div>
+
+                            <div class="thumbnail">
+                                <img src="img/players/thumbnail.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="players-info-games">
+
+                    <div class="player player1">
+                        <div class="nation-nick">
+                            <div class="nation">
+                                <img src="img/nations/bandera.png" alt="">
+                            </div>
+
+                            <div class="nick">
+                                <p class="nickname NimbusSanCon-Bol">GeraldoG09</p>
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            TKO PF
+                        </div>
+                    </div>
+
+                    <div class="games">
+
+                        <div class="game1">
+                            <span class="NimbusSanCon-Bol player1-final-score-g1">—</span>
+
+                            <span class="line">G1</span>
+
+                            <span class="NimbusSanCon-Bol player2-final-score-g1">—</span>
+                        </div>
+
+                        <div class="game2">
+                            <span class="NimbusSanCon-Bol player1-final-score-g2">—</span>
+
+                            <span class="line">G2</span>
+
+                            <span class="NimbusSanCon-Bol player2-final-score-g2">—</span>
+                        </div>
+
+                    </div>
+
+                    <div class="player player2">
+                        <div class="nation-nick">
+
+                            <div class="nick">
+                                <p class="nickname NimbusSanCon-Bol">GeraldoG09</p>
+                            </div>
+
+                            <div class="nation">
+                                <img src="img/nations/bandera.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="team">
+                            TKO PF
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

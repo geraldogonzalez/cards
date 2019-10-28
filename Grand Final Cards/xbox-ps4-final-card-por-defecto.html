@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grand Final Default Card</title>
+    <link rel="stylesheet" href="css/estilos.min.css">
+
+    <!-- ESTO ES SOLO PARA ESTILOS ESPECÍFICOS EN ESTE DOCUMENTO. IGNORENLO. -->
+    <style>
+        .main-grand-final .grand-final-container .grand-final .matchs {
+            top: 50vh;
+            margin-top: -135px!important;
+            grid-template-columns: 344px 344px;
+        }
+
+        .cards-menu {
+            padding: 1rem;
+            width: 90vw;
+            margin: 0 auto;
+            display: grid;
+            grid-auto-flow: column;
+            grid-column-gap: 2rem;
+            justify-content: center;
+        }
+
+        .cards-menu a {
+            display: block;
+            color: #fff;
+            padding: 1rem 2rem;
+            background: rgb(83, 108, 160);
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all .4s;
+        }
+
+        .cards-menu a:hover {
+            opacity: .5;
+        }
+
+        .cards-menu a.active {
+            opacity: .5;
+            cursor: default;
+        }
+
+        a.cards {
+            background: rgb(12, 94, 12);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="cards-menu">
+        <a href="grand-final-carta-por-defecto.html">GRAND FINAL - DEFAULT CARD</a>
+        <a class="active" href="#"> XBOX & PS4 FINAL - DEFAULT CARD </a>
+        <a class="cards" href="../Cards/1-carta-por-defecto.html">NORMAL CARDS</a>
+    </nav>
+
+    <div class="main-grand-final">
+        <div class="grand-final-container">
+            <div class="grand-final">
+                <div class="matchs xbox-ps4-final">
+
+                    <!-- PS4 CARD FINAL -->
+
+                    <a class="ps4 default" href="ps4-brackets.html">
+                        <!-- Añado la clase "default" aquí -->
+                        <div class="border-card border-card-final ps4 default">
+                            <!-- Añado la clase "default" aquí también -->
+                            <div class="card card-final">
+                                <div class="players-thumbnails-score">
+                                    <div class="player player1">
+                                        <div class="thumbnail-logo">
+                                            <div class="thumbnail">
+                                                <!-- Elimino la etiqueta <img> con la miniatura del player -->
+                                            </div>
+
+                                            <div class="logo">
+                                                <img src="img/shield.svg" alt="">
+                                                <!-- Añado la imagen del escudo por defecto -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="scores">
+                                        <div class="NimbusSanCon-Bol score score-player1">
+                                            <p></p>
+                                            <!-- Sin guiones ni números en el score. Puedes eliminar directamente esta etiqueta <p> si quieres -->
+                                        </div>
+                                        <div class="NimbusSanCon-Bol score score-player2">
+                                            <p></p> <!-- Igual aquí -->
+                                        </div>
+                                    </div>
+
+                                    <div class="player player2">
+                                        <div class="thumbnail-logo">
+                                            <div class="logo">
+                                                <img src="img/shield.svg" alt="">
+                                                <!-- Añado la imagen del escudo por defecto al igual que como en el player 1 -->
+                                            </div>
+
+                                            <div class="thumbnail">
+                                                <!-- Y también elimino la etiqueta <img> con la miniatura del player -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="players-info-games">
+
+                                    <div class="player player1">
+                                        <div class="nation-nick">
+                                            <div class="nation">
+                                                <!-- Elimino la etiqueta <img> con la nación del player -->
+                                            </div>
+
+                                            <div class="nick">
+                                                <p class="nickname NimbusSanCon-Bol">TBD</p>
+                                                <!-- Acá debe ir el texto "TBD" -->
+                                            </div>
+                                        </div>
+
+                                        <div class="team">
+                                            -
+                                            <!-- Acá un guión -->
+                                        </div>
+                                    </div>
+
+                                    <div class="games">
+
+                                        <div class="game1">
+                                            <span class="NimbusSanCon-Bol player1-final-score-g1">-</span>
+                                            <!-- Acá un guión -->
+
+                                            <span class="line">G1</span>
+
+                                            <span class="NimbusSanCon-Bol player2-final-score-g1">-</span>
+                                            <!-- Acá un guión -->
+                                        </div>
+
+                                        <div class="game2">
+                                            <span class="NimbusSanCon-Bol player1-final-score-g2">-</span>
+                                            <!-- Acá un guión -->
+
+                                            <span class="line">G2</span>
+
+                                            <span class="NimbusSanCon-Bol player2-final-score-g2">-</span>
+                                            <!-- Acá un guión -->
+                                        </div>
+
+                                    </div>
+
+                                    <div class="player player2">
+                                        <div class="nation-nick">
+
+                                            <div class="nick">
+                                                <p class="nickname NimbusSanCon-Bol">TBD</p>
+                                                <!-- Acá debe ir el texto "TBD" al igual que en el player 1 -->
+                                            </div>
+
+                                            <div class="nation">
+                                                <!-- Elimino la etiqueta <img> con la nación del player también aquí -->
+                                            </div>
+
+                                        </div>
+
+                                        <div class="team">
+                                            -
+                                            <!-- Otro guión -->
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="formation-record">
+
+                                    <div class="player player-1">
+                                        <div class="formation">
+                                            <span>-</span> <!-- Un guión acá -->
+                                            <img src="img/formations/default.svg" alt="">
+                                            <!-- Agrego la imagen de la formación por defecto -->
+                                        </div>
+
+                                        <div class="record-goals">
+                                            <div class="ecl-record">
+                                                <span class="record"> - </span> <!-- Y otro por acá -->
+                                                <span>ECL RECORD</span>
+                                            </div>
+                                            <div class="goal-per-game">
+                                                <span class="goals">-</span> <!-- Por acá otro guión -->
+                                                <span>GOALS PER GAME</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="player player-2">
+
+                                        <div class="record-goals">
+                                            <div class="ecl-record">
+                                                <span class="record"> - </span> <!-- Aquí -->
+                                                <span>ECL RECORD</span>
+                                            </div>
+                                            <div class="goal-per-game">
+                                                <span class="goals"> - </span> <!-- Aquí de nuevo -->
+                                                <span>GOALS PER GAME</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="formation">
+                                            <span> - </span> <!-- Y aquí por último -->
+                                            <img src="img/formations/default.svg" alt="">
+                                            <!-- Agrego la imagen de la formación por defecto acá también-->
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+
+
+
+                    <!-- XBOX CARD FINAL -->
+
+
+                    <a class="xbox default" href="ps4-brackets.html">
+                        <!-- Añado la clase "default" aquí -->
+                        <div class="border-card border-card-final xbox default">
+                            <!-- Añado la clase "default" aquí también -->
+                            <div class="card card-final">
+                                <div class="players-thumbnails-score">
+                                    <div class="player player1">
+                                        <div class="thumbnail-logo">
+                                            <div class="thumbnail">
+                                                <!-- Elimino la etiqueta <img> con la miniatura del player -->
+                                            </div>
+
+                                            <div class="logo">
+                                                <img src="img/shield.svg" alt="">
+                                                <!-- Añado la imagen del escudo por defecto -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="scores">
+                                        <div class="NimbusSanCon-Bol score score-player1">
+                                            <p></p>
+                                            <!-- Sin guiones ni números en el score. Puedes eliminar directamente esta etiqueta <p> si quieres -->
+                                        </div>
+                                        <div class="NimbusSanCon-Bol score score-player2">
+                                            <p></p> <!-- Igual aquí -->
+                                        </div>
+                                    </div>
+
+                                    <div class="player player2">
+                                        <div class="thumbnail-logo">
+                                            <div class="logo">
+                                                <img src="img/shield.svg" alt="">
+                                                <!-- Añado la imagen del escudo por defecto al igual que como en el player 1 -->
+                                            </div>
+
+                                            <div class="thumbnail">
+                                                <!-- Y también elimino la etiqueta <img> con la miniatura del player -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="players-info-games">
+
+                                    <div class="player player1">
+                                        <div class="nation-nick">
+                                            <div class="nation">
+                                                <!-- Elimino la etiqueta <img> con la nación del player -->
+                                            </div>
+
+                                            <div class="nick">
+                                                <p class="nickname NimbusSanCon-Bol">TBD</p>
+                                                <!-- Acá debe ir el texto "TBD" -->
+                                            </div>
+                                        </div>
+
+                                        <div class="team">
+                                            -
+                                            <!-- Acá un guión -->
+                                        </div>
+                                    </div>
+
+                                    <div class="games">
+
+                                        <div class="game1">
+                                            <span class="NimbusSanCon-Bol player1-final-score-g1">-</span>
+                                            <!-- Acá un guión -->
+
+                                            <span class="line">G1</span>
+
+                                            <span class="NimbusSanCon-Bol player2-final-score-g1">-</span>
+                                            <!-- Acá un guión -->
+                                        </div>
+
+                                        <div class="game2">
+                                            <span class="NimbusSanCon-Bol player1-final-score-g2">-</span>
+                                            <!-- Acá un guión -->
+
+                                            <span class="line">G2</span>
+
+                                            <span class="NimbusSanCon-Bol player2-final-score-g2">-</span>
+                                            <!-- Acá un guión -->
+                                        </div>
+
+                                    </div>
+
+                                    <div class="player player2">
+                                        <div class="nation-nick">
+
+                                            <div class="nick">
+                                                <p class="nickname NimbusSanCon-Bol">TBD</p>
+                                                <!-- Acá debe ir el texto "TBD" al igual que en el player 1 -->
+                                            </div>
+
+                                            <div class="nation">
+                                                <!-- Elimino la etiqueta <img> con la nación del player también aquí -->
+                                            </div>
+
+                                        </div>
+
+                                        <div class="team">
+                                            -
+                                            <!-- Otro guión -->
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="formation-record">
+
+                                    <div class="player player-1">
+                                        <div class="formation">
+                                            <span>-</span> <!-- Un guión acá -->
+                                            <img src="img/formations/default.svg" alt="">
+                                            <!-- Agrego la imagen de la formación por defecto -->
+                                        </div>
+
+                                        <div class="record-goals">
+                                            <div class="ecl-record">
+                                                <span class="record"> - </span> <!-- Y otro por acá -->
+                                                <span>ECL RECORD</span>
+                                            </div>
+                                            <div class="goal-per-game">
+                                                <span class="goals">-</span> <!-- Por acá otro guión -->
+                                                <span>GOALS PER GAME</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="player player-2">
+
+                                        <div class="record-goals">
+                                            <div class="ecl-record">
+                                                <span class="record"> - </span> <!-- Aquí -->
+                                                <span>ECL RECORD</span>
+                                            </div>
+                                            <div class="goal-per-game">
+                                                <span class="goals"> - </span> <!-- Aquí de nuevo -->
+                                                <span>GOALS PER GAME</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="formation">
+                                            <span> - </span> <!-- Y aquí por último -->
+                                            <img src="img/formations/default.svg" alt="">
+                                            <!-- Agrego la imagen de la formación por defecto acá también-->
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
