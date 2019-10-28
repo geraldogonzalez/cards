@@ -1,2 +1,1 @@
-# cards
-Repositorio para ver las distintas cartas del nuevo Public Facing
+# Mira las cards haciendo click aquí o en: 
